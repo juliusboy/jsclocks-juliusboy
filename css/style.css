@@ -1,0 +1,38 @@
+/*
+ * Chargement des fontes
+ * Voir : http://cours-web.ch/css/typographie
+*/
+
+
+@font-face {
+    font-family: 'notcouriersans';
+    src: url('../fonts/NotCourierSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersans';
+    src: url('../fonts/NotCourierSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+html {
+	font-family: notcouriersans, monospace;
+}
+
+
+/*
+ * Définition du modèle de boîte
+ * Voir : http://cours-web.ch/css/box-model
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
