@@ -15,5 +15,9 @@ Ce fichier charge les éléments suivants:
 - font = dossier contenant la webfont NotCourierSans, à titre d'exemple.
 - js/clocks.js = un endroit où mettre votre code JavaScript.
 
+## Fonctionnement
+
+((à définir))
+
 Automne 2017  
 Eracom, Lausanne
