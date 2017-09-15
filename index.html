@@ -6,14 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/clocks.js"></script>
     </head>
     <body>
-    
-        <h1>Salut, je suis un titre</h1>
-        <p>Ciao, je suis un paragraphe</p>
+		
+		<time class="temps" id="heure">00:00:00</time>
 
-        <time class="temps" id="horloge">00:00:00</time>
-    
+		<time class="temps" id="minute">00:00:00</time>
+
+		<time class="temps" id="seconde">00:00:00</time>
+
     </body>
+	<script>
+	// répéter la fonction metronone une fois par seconde
+	var myVar = setInterval(function() {
+	  metronome();
+	}, 1000);
+
+	function metronome() {
+
+	  // 1: on définit l'heure, avec l'objet Date()
+	  // voir documentation: https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date
+
+	  var date = new Date;
+	  var heure = date.getHours();
+	  var minute = date.getMinutes();
+	  var seconde = date.getSeconds();
+
+	  // 2: on affiche l'heure dans notre objet "horloge"
+
+	  document.getElementById("heure").innerHTML = heure;
+
+	  document.getElementById("minute").innerHTML = minute;
+
+	  document.getElementById("seconde").innerHTML = seconde;
+
+
+	}
+
+	</script>
 </html>
