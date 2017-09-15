@@ -5,24 +5,31 @@
 
 
 @font-face {
-    font-family: 'notcouriersans';
-    src: url('../fonts/NotCourierSans.woff') format('woff');
+    font-family: 'Colaborate';
+    src: url('../fonts/Colaborate-Bold.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style:normal;
+	font-size: 500%;
+
 }
 
 @font-face {
-    font-family: 'notcouriersans';
-    src: url('../fonts/NotCourierSans-Bold.woff') format('woff');
+    font-family: 'Colaborate';
+    src: url('../fonts/Colaborate-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+	font-size: 500%;
 }
 
 
 html {
-	font-family: notcouriersans, monospace;
+	font-family: Colaborate, monospace;
+	font-size: 500%;
 }
 
+time {
+	position: absolute;
+}
 
 /*
  * Définition du modèle de boîte
@@ -35,4 +42,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
