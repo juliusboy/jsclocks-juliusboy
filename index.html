@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>The JS Clocks</title>
+		<h6>IL EST</h6>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -48,7 +49,7 @@
 		var date = new Date;
   	  var heure = date.getHours();
 
-		document.getElementById("heure").innerHTML = heure;
+		document.getElementById("heure").innerHTML = heure+"h";
 
 		document.getElementById("heure").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("heure").style.left = getRandom(10, 90)+'%';
@@ -60,7 +61,7 @@
 		var date = new Date;
   	  var minute = date.getMinutes();
 
-	  	document.getElementById("minute").innerHTML = minute;
+	  	document.getElementById("minute").innerHTML = minute+"’";
 
 		document.getElementById("minute").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("minute").style.left = getRandom(10, 90)+'%';
@@ -77,7 +78,7 @@
 		var minute = date.getMinutes();
 		var seconde = date.getSeconds();
 
-	  	document.getElementById("seconde").innerHTML = seconde;
+	  	document.getElementById("seconde").innerHTML = seconde+"”";
 
 		document.getElementById("seconde").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("seconde").style.left = getRandom(10, 90)+'%';
