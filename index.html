@@ -77,8 +77,9 @@
 		var heure = date.getHours();
 		var minute = date.getMinutes();
 		var seconde = date.getSeconds();
+		var formattedNumber = ("0" + seconde).slice(-2);
 
-	  	document.getElementById("seconde").innerHTML = seconde+"”";
+	  	document.getElementById("seconde").innerHTML = formattedNumber+"”";
 
 		document.getElementById("seconde").style.top = getRandom(10, 90)+'%';
   	  document.getElementById("seconde").style.left = getRandom(10, 90)+'%';
